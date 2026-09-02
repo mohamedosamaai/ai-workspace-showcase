@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bagback AI Workspace — Showcase & Architecture Suite</title>
   <meta name="description" content="Bilingual AI prompts library, MCP registry & developer workbench — Public showcase with type-safe mock layer and C4 architecture by Mohamed Osama." />
   
+  <!-- Tailwind CSS & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    body { font-family: 'Plus Jakarta Sans', 'Cairo', sans-serif; }
+    code, pre { font-family: 'Fira Code', monospace; }
+  </style>
+
   <!-- GEO Targeting Meta Tags -->
   <meta name="geo.region" content="AE-DU" />
   <meta name="geo.placename" content="Dubai" />
   <meta name="geo.position" content="25.2048;55.2708" />
   <meta name="ICBM" content="25.2048, 55.2708" />
-
-  <!-- Open Graph / Social Meta Tags -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Bagback AI Workspace — Showcase & Architecture Suite" />
-  <meta property="og:description" content="Bilingual AI prompts library, MCP registry & developer workbench with C4 architecture and type-safe mock layer." />
-  <meta property="og:url" content="https://ai.bagbacktech.com" />
-  <meta property="og:site_name" content="Bagback Digital Solutions" />
 
   <!-- Schema.org JSON-LD Knowledge Graph -->
   <script type="application/ld+json">
@@ -32,12 +36,8 @@
         "codeRepository": "https://github.com/mohamedosamaai/ai-workspace-showcase",
         "programmingLanguage": ["TypeScript", "JavaScript", "Python"],
         "runtimePlatform": "Node.js",
-        "author": {
-          "@id": "https://mohamedosama.me/#person"
-        },
-        "publisher": {
-          "@id": "https://bagbacktech.com/#organization"
-        }
+        "author": { "@id": "https://mohamedosama.me/#person" },
+        "publisher": { "@id": "https://bagbacktech.com/#organization" }
       },
       {
         "@type": "Person",
@@ -56,7 +56,6 @@
           {
             "@type": "EducationalOccupationalCredential",
             "name": "Google Cloud Vertex AI Studio Certification",
-            "credentialCategory": "Professional AI Engineering",
             "identifier": "24009731"
           },
           {
@@ -85,8 +84,196 @@
   }
   </script>
 </head>
-<body>
-  <h1>Bagback AI Workspace Showcase</h1>
-  <p>Please visit <a href="https://ai.bagbacktech.com">ai.bagbacktech.com</a> for the live application.</p>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+  <!-- Top Live Platform Banner -->
+  <div class="bg-emerald-950 border-b border-emerald-800/60 px-4 py-2 text-center text-sm font-medium">
+    <span class="inline-flex items-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span>🚀 <strong>LIVE PRODUCTION PLATFORM:</strong></span>
+      <a href="https://ai.bagbacktech.com" target="_blank" rel="noopener noreferrer" class="text-emerald-400 underline hover:text-emerald-300 font-bold">
+        https://ai.bagbacktech.com
+      </a>
+      <span class="text-xs text-slate-400 ml-2 hidden sm:inline">(Protected Private Infrastructure · Zero Data Leaks)</span>
+    </span>
+  </div>
+
+  <!-- Header -->
+  <header class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 border-b border-slate-800">
+    <div>
+      <div class="flex items-center gap-3">
+        <div class="p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-bold text-xl">
+          🏛️
+        </div>
+        <div>
+          <h1 class="text-2xl font-extrabold tracking-tight text-white">Bagback AI Workspace</h1>
+          <p class="text-sm text-slate-400">Architecture Showcase & Interactive Mock Contracts Suite</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center gap-3 flex-wrap">
+      <a href="https://github.com/mohamedosamaai/ai-workspace-showcase" target="_blank" class="px-4 py-2 rounded-lg bg-slate-900 border border-slate-700 hover:bg-slate-800 text-sm font-semibold transition">
+        GitHub Repository
+      </a>
+      <a href="https://mohamedosama.me" target="_blank" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-slate-950 text-sm font-bold transition">
+        Architect Hub
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Showcase Container -->
+  <main class="max-w-6xl mx-auto px-4 py-10 space-y-12">
+    <!-- Interactive Workbench -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Input Panel -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 space-y-4">
+        <div class="flex items-center justify-between">
+          <h2 class="text-lg font-bold text-emerald-400 flex items-center gap-2">
+            <span>🛡️</span> Interactive 10-Vector Safety Scanner
+          </h2>
+          <span class="text-xs px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 font-mono">Mock Layer</span>
+        </div>
+        <p class="text-sm text-slate-400">
+          Paste any prompt or MCP tool configuration to test the linear-time 10-vector security scan and token cost estimation.
+        </p>
+        <textarea id="promptInput" rows="6" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-sm font-mono text-slate-200 focus:outline-none focus:border-emerald-500 transition" placeholder="Type or paste prompt text here...">Act as a Senior Principal Cloud Architect. Generate comprehensive C4 Architecture diagrams in Mermaid for an enterprise microservices ecosystem.</textarea>
+        
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <div class="flex items-center gap-2">
+            <label class="text-xs text-slate-400">Target Model:</label>
+            <select id="modelSelect" class="bg-slate-950 border border-slate-800 text-xs rounded-lg px-2.5 py-1.5 text-slate-200 focus:outline-none focus:border-emerald-500">
+              <option value="gemini-3.7-flash" selected>Gemini 3.7 Flash ($0.00015/1k)</option>
+              <option value="gemini-3.7-pro">Gemini 3.7 Pro ($0.00125/1k)</option>
+              <option value="claude-3.5-sonnet">Claude 3.5 Sonnet ($0.00300/1k)</option>
+              <option value="gpt-4o">GPT-4o ($0.00250/1k)</option>
+            </select>
+          </div>
+          <button id="scanBtn" class="px-5 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm transition">
+            Run Analysis
+          </button>
+        </div>
+      </div>
+
+      <!-- Analysis Results Panel -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 space-y-4">
+        <h2 class="text-lg font-bold text-slate-100 flex items-center gap-2">
+          <span>📊</span> Live Telemetry & Threat Assessment
+        </h2>
+        
+        <!-- Metrics Row -->
+        <div class="grid grid-cols-3 gap-3">
+          <div class="bg-slate-950 border border-slate-800/80 p-3 rounded-xl text-center">
+            <div class="text-xs text-slate-400">Est. Tokens</div>
+            <div id="tokenCount" class="text-xl font-bold font-mono text-emerald-400">28</div>
+          </div>
+          <div class="bg-slate-950 border border-slate-800/80 p-3 rounded-xl text-center">
+            <div class="text-xs text-slate-400">Est. Cost</div>
+            <div id="costUsd" class="text-xl font-bold font-mono text-slate-200">$0.000004</div>
+          </div>
+          <div class="bg-slate-950 border border-slate-800/80 p-3 rounded-xl text-center">
+            <div class="text-xs text-slate-400">Risk Score</div>
+            <div id="riskScore" class="text-xl font-bold font-mono text-emerald-400">0.00</div>
+          </div>
+        </div>
+
+        <!-- Threat Vectors Status -->
+        <div class="space-y-2">
+          <div class="text-xs font-semibold text-slate-400">10-Vector Scan Breakdown:</div>
+          <div id="vectorList" class="grid grid-cols-2 gap-2 text-xs font-mono">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Authority & Ecosystem Footer -->
+    <section class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 space-y-4">
+      <h3 class="text-sm font-bold text-slate-300 uppercase tracking-wider">🏛️ Verified Entity Authority & Ecosystem</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-slate-400">
+        <div>
+          <strong class="text-slate-200">Architect:</strong> Mohamed Osama (محمد أسامة)<br/>
+          <strong class="text-slate-200">Authority Hub:</strong> <a href="https://mohamedosama.me" target="_blank" class="text-emerald-400 hover:underline">mohamedosama.me</a><br/>
+          <strong class="text-slate-200">Wikidata:</strong> <a href="https://www.wikidata.org/wiki/Q141252311" target="_blank" class="text-emerald-400 hover:underline">Q141252311</a>
+        </div>
+        <div>
+          <strong class="text-slate-200">Entity:</strong> Bagback Digital Solutions<br/>
+          <strong class="text-slate-200">Registry (CR):</strong> 218773 (Dubai, UAE)<br/>
+          <strong class="text-slate-200">Tax ID:</strong> 757-139-248
+        </div>
+        <div>
+          <strong class="text-slate-200">Google Cloud:</strong> Vertex AI Studio (ID: 24009731)<br/>
+          <strong class="text-slate-200">Dubai Chamber:</strong> Award Ref: MeYYoRxN<br/>
+          <strong class="text-slate-200">Live Engine:</strong> <a href="https://ai.bagbacktech.com" target="_blank" class="text-emerald-400 hover:underline">ai.bagbacktech.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const vectors = [
+      'promptInjection', 'ignorePrevious', 'stealTokens', 'credentialExposure',
+      'rmRf', 'curlBash', 'encodedPowerShell', 'phishingLinks', 'xssHtmlRisk', 'unsafeMcp'
+    ];
+
+    function scanSafety(text) {
+      const lower = text.toLowerCase();
+      const flags = {
+        promptInjection: /(?:ignore\s+(?:all\s+)?previous|override\s+system\s+role)/i.test(lower),
+        ignorePrevious: /ignore\s+all\s+instructions/i.test(lower),
+        stealTokens: /(?:bearer\s+[a-z0-9_\-.]{20,}|api[_-]?key)/i.test(lower),
+        credentialExposure: /(?:ghp_[a-z0-9]{20,}|sk-[a-z0-9]{20,})/i.test(lower),
+        rmRf: /(?:rm\s+-rf\s+\/|format\s+c:)/i.test(lower),
+        curlBash: /(?:curl|wget)\s+[^\r\n|]{1,100}\|\s*(?:ba)?sh/i.test(lower),
+        encodedPowerShell: /powershell(?:\.exe)?\s+-[eE](?:ncodedCommand)?/i.test(lower),
+        phishingLinks: /https?:\/\/[a-z0-9.-]{1,100}\.(?:ru|xyz|top)\b/i.test(lower),
+        xssHtmlRisk: /<\s*script\b/i.test(lower),
+        unsafeMcp: /(?:execute_raw_command|eval\()/i.test(lower)
+      };
+
+      const triggered = Object.keys(flags).filter(k => flags[k]);
+      return { flags, passed: triggered.length === 0, riskScore: triggered.length * 0.25 };
+    }
+
+    function calculateMetrics(text, model) {
+      const tokens = Math.max(1, Math.ceil(text.length / 3.8));
+      const prices = {
+        'gemini-3.7-flash': 0.00015,
+        'gemini-3.7-pro': 0.00125,
+        'claude-3.5-sonnet': 0.003,
+        'gpt-4o': 0.0025
+      };
+      const pricePerToken = (prices[model] || 0.00015) / 1000;
+      return { tokens, cost: (tokens * pricePerToken).toFixed(6) };
+    }
+
+    function render() {
+      const text = document.getElementById('promptInput').value;
+      const model = document.getElementById('modelSelect').value;
+      const { flags, passed, riskScore } = scanSafety(text);
+      const { tokens, cost } = calculateMetrics(text, model);
+
+      document.getElementById('tokenCount').innerText = tokens;
+      document.getElementById('costUsd').innerText = '$' + cost;
+      
+      const riskEl = document.getElementById('riskScore');
+      riskEl.innerText = riskScore.toFixed(2);
+      riskEl.className = 'text-xl font-bold font-mono ' + (passed ? 'text-emerald-400' : 'text-rose-400');
+
+      const listEl = document.getElementById('vectorList');
+      listEl.innerHTML = '';
+      vectors.forEach(v => {
+        const isTriggered = flags[v];
+        const item = document.createElement('div');
+        item.className = 'flex items-center justify-between p-2 rounded-lg border ' + 
+          (isTriggered ? 'bg-rose-950/40 border-rose-800/80 text-rose-300' : 'bg-slate-950 border-slate-800/60 text-slate-400');
+        item.innerHTML = `<span>${v}</span><span>${isTriggered ? '⚠️ FAIL' : '✓ PASS'}</span>`;
+        listEl.appendChild(item);
+      });
+    }
+
+    document.getElementById('scanBtn').addEventListener('click', render);
+    document.getElementById('promptInput').addEventListener('input', render);
+    document.getElementById('modelSelect').addEventListener('change', render);
+    render();
+  </script>
 </body>
 </html>

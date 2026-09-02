@@ -25,6 +25,12 @@
 
 ---
 
+> [!IMPORTANT]
+> **🚀 LIVE PRODUCTION PLATFORM: [https://ai.bagbacktech.com](https://ai.bagbacktech.com)**  
+> This public repository serves as the **verified architectural contracts, C4 models, and type-safe mock execution layer** for Bagback AI Workspace. The sovereign production engine, multi-model orchestrator, and real-time database run securely on private GCP & Firebase infrastructure with 100% data isolation.
+
+---
+
 ## 📊 Architectural Metrics & Showcase Indicators
 
 | Metric Card | Value / SLA | Architectural Standard |
