@@ -1,0 +1,11 @@
+services:
+  showcase:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai-workspace-showcase
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 Security Advisory & Private Disclosure
+    url: https://github.com/mohamedosamaai/ai-workspace-showcase/security/advisories/new
+    about: Please report security vulnerabilities privately.
+  - name: 💬 Live Production Portal
+    url: https://ai.bagbacktech.com
+    about: Access the full enterprise AI Workspace application.

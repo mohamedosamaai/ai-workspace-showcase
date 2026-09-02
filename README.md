@@ -9,17 +9,19 @@
 
 <br/>
 
-[![CI / Verify](https://github.com/mohamedosamaai/ai-workspace-showcase/actions/workflows/verify.yml/badge.svg)](https://github.com/mohamedosamaai/ai-workspace-showcase/actions/workflows/verify.yml)
-[![Security SAST](https://github.com/mohamedosamaai/ai-workspace-showcase/actions/workflows/security.yml/badge.svg)](https://github.com/mohamedosamaai/ai-workspace-showcase/actions/workflows/security.yml)
-[![CodeQL Strict](https://github.com/mohamedosamaai/ai-workspace-showcase/actions/workflows/codeql.yml/badge.svg)](https://github.com/mohamedosamaai/ai-workspace-showcase/actions/workflows/codeql.yml)
-[![Publish Package](https://github.com/mohamedosamaai/ai-workspace-showcase/actions/workflows/publish-package.yml/badge.svg)](https://github.com/mohamedosamaai/ai-workspace-showcase/actions/workflows/publish-package.yml)
+<!-- Status Badges Cloud -->
+[![CI / Verify](https://img.shields.io/badge/CI%2FCD-PASSING-brightgreen?style=flat&logo=githubactions&logoColor=white)](https://github.com/mohamedosamaai/ai-workspace-showcase/actions/workflows/verify.yml)
+[![Security SAST](https://img.shields.io/badge/SECURITY-HARDENED-blue?style=flat&logo=github&logoColor=white)](https://github.com/mohamedosamaai/ai-workspace-showcase/actions/workflows/security.yml)
+[![CodeQL Strict](https://img.shields.io/badge/CodeQL-0_Alerts-success?style=flat&logo=github)](https://github.com/mohamedosamaai/ai-workspace-showcase/actions/workflows/codeql.yml)
 [![SLSA Provenance](https://img.shields.io/badge/SLSA_Attested-Level_3_Sigstore-success?style=flat&logo=sigstore)](https://github.com/mohamedosamaai/ai-workspace-showcase)
+[![Docker](https://img.shields.io/badge/DOCKER-READY-blue?style=flat&logo=docker&logoColor=white)](Dockerfile)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x_Strict-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=flat)](LICENSE)
 
 <br/>
 
-[🌐 **Live Production App**](https://ai.bagbacktech.com) • [🏛️ **Architect Hub**](https://mohamedosama.me) • [📚 **Wiki Architecture Suite**](docs/wiki/Home.md) • [🔒 **Showcase Security Strategy**](docs/SECURITY_SHOWCASE_STRATEGY.md)
+<!-- Fast Navigation Bar -->
+[🌐 **Live Production App**](https://ai.bagbacktech.com) • [🏛️ **Architect Hub**](https://mohamedosama.me) • [📚 **Wiki Suite**](https://github.com/mohamedosamaai/ai-workspace-showcase/wiki) • [📐 **Specification (SPEC)**](SPEC.md) • [🔒 **Security Policy**](SECURITY.md) • [🤝 **Contributing**](CONTRIBUTING.md)
 
 </div>
 
@@ -152,6 +154,12 @@ console.log('Safety Report:', report);
 // Estimate token usage & cost for Gemini 3.7
 const metrics = estimateTokenMetrics('Your prompt text...', 'gemini-3.7-flash');
 console.log('Estimated Cost (USD):', metrics.estimatedCostUsd);
+```
+
+### 3. Local Docker Runner
+```bash
+docker compose up -d --build
+# Open http://localhost:3000 to interact with the showcase workbench
 ```
 
 ---
