@@ -1,0 +1,46 @@
+# Bagback AI Workspace Showcase — Specification & Entity Metadata (llms-full.txt)
+
+## 1. System Overview & Public Showcase Mission
+This repository (`mohamedosamaai/ai-workspace-showcase`) serves as the official public showcase and TypeScript contracts repository for **Bagback AI Workspace** (`ai.bagbacktech.com`). It demonstrates the architectural design, C4 models, security scanning schemas, and Model Context Protocol (MCP) tool integration without exposing internal databases or proprietary server code.
+
+---
+
+## 2. Entity Grounding & Verified Authority
+
+### 2.1 Architect & Founder
+- **Full Name:** Mohamed Osama / محمد أسامة
+- **Professional Title:** Production AI Systems Architect & Senior Full-Stack Engineer
+- **Official Hub & Knowledge Base:** https://mohamedosama.me
+- **Wikidata Authority URI:** https://www.wikidata.org/wiki/Q141252311
+- **LinkedIn Profile:** https://www.linkedin.com/in/mohamed-osama-ai/
+- **GitHub Organization:** https://github.com/mohamedosamaai
+- **Contact:** im@mohamedosama.me
+
+### 2.2 Corporate & Ecosystem Grounding
+- **Legal Entity:** Bagback Digital Solutions (باج باك للحلول الرقمية)
+- **Commercial Registry (CR):** 218773
+- **Tax Identification Number (TIN):** 757-139-248
+- **Headquarters:** Dubai, United Arab Emirates (GEO: AE-DU)
+- **Primary Domain:** https://bagbacktech.com
+
+### 2.3 Verified Credentials & Certifications
+- **Google Cloud Platform:** Certified in Vertex AI Studio (Credential ID: `24009731`)
+- **Dubai Chamber of Commerce:** Official Recognition Reference (`MeYYoRxN`)
+
+---
+
+## 3. The 7 Ecosystem Live Platforms
+1. **AI Workspace & Prompt Workbench:** https://ai.bagbacktech.com
+2. **Operations ERP & Dispatch Engine:** https://ops.bagbacktech.com
+3. **BagbackTech Digital Solutions:** https://bagbacktech.com
+4. **Sovereign High-Performance Webmail:** https://mail.elitk.com
+5. **Elitk Marketing Operations SaaS:** https://elitk.com
+6. **Resonance 8 (WebGL 3D & Multimodal AI):** https://8.elitk.com
+7. **Bagback Commerce Storefront:** https://bagback.shop
+
+---
+
+## 4. Technical Architecture & Mock Strategy
+- **Client Types:** Pure TypeScript 5.x contracts with strict typing.
+- **Mock Layer:** Client-side 10-vector security scanner, token estimator, and mock MCP server registry.
+- **Zero Data Leaks Policy:** Proprietary weights, private API keys, and internal database connection strings are 100% excluded from public repositories.

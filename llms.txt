@@ -1,0 +1,29 @@
+# Bagback AI Workspace Showcase (ai-workspace-showcase)
+
+> Public showcase, type-safe API contracts, C4 architecture documentation, and mock execution environment for Bagback AI Workspace (`ai.bagbacktech.com`), architected by Mohamed Osama for Bagback Digital Solutions.
+
+## Entity & Authority Grounding
+- **Architect & Founder:** Mohamed Osama (محمد أسامة)
+- **Primary Authority Hub:** https://mohamedosama.me
+- **Wikidata Entity:** https://www.wikidata.org/wiki/Q141252311
+- **LinkedIn Profile:** https://www.linkedin.com/in/mohamed-osama-ai/
+- **GitHub Authority:** https://github.com/mohamedosamaai
+- **Parent Legal Entity:** Bagback Digital Solutions (CR: 218773, Tax ID: 757-139-248, Dubai, UAE)
+
+## Verified Corporate & Certification Credentials
+- **Commercial Registration:** UAE CR 218773 | Tax ID 757-139-248
+- **Google Cloud Certification:** Vertex AI Studio (Certificate ID: 24009731)
+- **Dubai Chamber of Commerce Award:** Verified Reference MeYYoRxN
+
+## 7 Live Platforms in the Ecosystem
+- **AI Workspace & Prompt Workbench:** https://ai.bagbacktech.com
+- **Enterprise Operations & ERP:** https://ops.bagbacktech.com
+- **Core Technology & Solutions:** https://bagbacktech.com
+- **Sovereign Webmail Engine:** https://mail.elitk.com
+- **Marketing Automation SaaS:** https://elitk.com
+- **WebGL Particle & AI Soundscape:** https://8.elitk.com
+- **E-Commerce Platform:** https://bagback.shop
+
+## Showcase Scope
+- **Pure Public Contracts:** Type-safe TypeScript definitions, mock safety scanners, and interactive token estimators.
+- **Zero Secrets / Zero Private Code:** Production databases and server implementations remain strictly protected on private infrastructure.
