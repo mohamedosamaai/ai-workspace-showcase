@@ -138,16 +138,16 @@ export const MOCK_MCP_SERVERS: McpServerConfig[] = [
 export function scanPromptSafety(content: string): SafetyReport {
   const lower = content.toLowerCase();
   const flags: ThreatVectorFlags = {
-    promptInjection: /ignore\s+(all\s+)?previous|override\s+system\s+role/i.test(lower),
+    promptInjection: /(?:ignore\s+(?:all\s+)?previous|override\s+system\s+role)/i.test(lower),
     ignorePrevious: /ignore\s+all\s+instructions/i.test(lower),
-    stealTokens: /bearer\s+[a-z0-9_\-\.]+|api[_-]?key/i.test(lower),
-    credentialExposure: /ghp_[a-z0-9]{20,}|sk-[a-z0-9]{20,}/i.test(lower),
-    rmRf: /rm\s+-rf\s+\/|format\s+c:/i.test(lower),
-    curlBash: /curl\s+[^\n|]+\|\s*(ba)?sh/i.test(lower),
-    encodedPowerShell: /powershell(\.exe)?\s+-[eE](ncodedCommand)?/i.test(lower),
-    phishingLinks: /http[s]?:\/\/[^\s]+\.(ru|xyz|top)\//i.test(lower),
-    xssHtmlRisk: /<script[\s\S]*?>[\s\S]*?<\/script>/i.test(lower),
-    unsafeMcp: /execute_raw_command|eval\(/i.test(lower)
+    stealTokens: /(?:bearer\s+[a-z0-9_\-.]{20,}|api[_-]?key)/i.test(lower),
+    credentialExposure: /(?:ghp_[a-z0-9]{20,}|sk-[a-z0-9]{20,})/i.test(lower),
+    rmRf: /(?:rm\s+-rf\s+\/|format\s+c:)/i.test(lower),
+    curlBash: /(?:curl|wget)\s+[^\r\n|]{1,100}\|\s*(?:ba)?sh/i.test(lower),
+    encodedPowerShell: /powershell(?:\.exe)?\s+-[eE](?:ncodedCommand)?/i.test(lower),
+    phishingLinks: /https?:\/\/[a-z0-9.-]{1,100}\.(?:ru|xyz|top)\b/i.test(lower),
+    xssHtmlRisk: /<\s*script\b/i.test(lower),
+    unsafeMcp: /(?:execute_raw_command|eval\()/i.test(lower)
   };
 
   const detectedThreats = Object.entries(flags)
