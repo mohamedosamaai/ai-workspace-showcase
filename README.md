@@ -84,7 +84,7 @@ graph TD
     State --> ClientRules
     ClientRules --> TypeContracts
     TypeContracts --> MockEngine
-    ClientRules -.->|Production Mode (Private API)| API
+    ClientRules -.->|Production Mode - Private API| API
     API --> DBEngine
 ```
 
