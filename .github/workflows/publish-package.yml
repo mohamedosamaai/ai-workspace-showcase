@@ -32,7 +32,9 @@ jobs:
         run: npm run build
 
       - name: Generate Package Artifact
-        run: npm pack --pack-destination ./dist-pack
+        run: |
+          mkdir -p ./dist-pack
+          npm pack --pack-destination ./dist-pack
 
       - name: Attest Build Provenance (SLSA v2)
         uses: actions/attest-build-provenance@v2
