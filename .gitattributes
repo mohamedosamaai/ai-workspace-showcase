@@ -1,0 +1,5 @@
+*.html linguist-detectable=false
+*.html linguist-documentation=true
+dist/** linguist-vendored
+tests/** linguist-documentation
+docs/** linguist-documentation
