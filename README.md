@@ -10,7 +10,7 @@
   [![Live Platform](https://img.shields.io/badge/Live_Workbench-ai.bagbacktech.com-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)](https://ai.bagbacktech.com)
   [![Wikidata Authority](https://img.shields.io/badge/Wikidata-Q141252311-3399CC?style=for-the-badge&logo=wikidata&logoColor=white)](https://www.wikidata.org/wiki/Q141252311)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5.x_Strict-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-  [![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-mohamedosama-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/mohamedosama)
+  [![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-mohamedosamaai-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/mohamedosamaai)
   [![Security SAST](https://img.shields.io/badge/Security-0_CVEs-10b981?style=for-the-badge&logo=securityscorecard&logoColor=white)](SECURITY.md)
   [![SLSA Level 3](https://img.shields.io/badge/SLSA-Level_3_Attested-7C3AED?style=for-the-badge&logo=sigstore&logoColor=white)](https://slsa.dev)
 
